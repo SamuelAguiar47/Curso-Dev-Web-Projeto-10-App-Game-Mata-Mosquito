@@ -19,14 +19,14 @@ function posicaoRandomica() {
     if(document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove();
 
-        if(vidas < 1) {
-            alert('interromper jogo')
-        } else {
         document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png';
 
         vidas--;
         }
         console.log('v' + vidas);
+        if(vidas < 1) {
+            window.location.href = 'fim_de_jogo.html'
+        } else {
     }
 
     var posicaoX = Math.floor(Math.random() * largura);
