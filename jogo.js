@@ -1,4 +1,3 @@
-
 var altura = 0;
 var largura = 0;
 
